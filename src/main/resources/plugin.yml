@@ -1,0 +1,61 @@
+name: NonGrata
+
+version: '${project.version}'
+
+main: xyz.agaev.nongrata.NonGrataPlugin
+
+api-version: '1.21'
+
+author: Agaev
+
+website: https://github.com/laptopacadapterquality-web/NonGrata
+
+description: Professional player registry plugin
+
+load: POSTWORLD
+
+commands:
+
+  nongrata:
+    description: Open NonGrata
+    aliases:
+      - ng
+    permission: nongrata.use
+
+permissions:
+
+  nongrata.*:
+    default: op
+    children:
+      nongrata.use: true
+      nongrata.view: true
+      nongrata.add: true
+      nongrata.edit: true
+      nongrata.remove: true
+      nongrata.history: true
+      nongrata.notify: true
+      nongrata.settings: true
+
+  nongrata.use:
+    default: op
+
+  nongrata.view:
+    default: op
+
+  nongrata.add:
+    default: op
+
+  nongrata.edit:
+    default: op
+
+  nongrata.remove:
+    default: op
+
+  nongrata.history:
+    default: op
+
+  nongrata.notify:
+    default: op
+
+  nongrata.settings:
+    default: op
